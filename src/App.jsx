@@ -101,9 +101,9 @@ const App = () => {
 
   return (
     <div className="bg-[#1B100E]">
-      <nav className="z-10 overflow-hidden  flex flex-col sm:flex-row sticky top-0  justify-between text-white text-xl text-wrap font-semibold  py-2 px-5 bg-[#ffffff0e]  ">
+      <nav className="z-10 overflow-hidden  flex flex-col sm:flex-row sticky top-0  justify-between text-white text-xl text-wrap font-semibold  py-2  bg-[#ffffff0e]  ">
         <div className="flex flex-row  justify-between">
-          <div className="  max-h-14 max-w-36" alt="">
+          <div className="  max-h-14 max-w-36" alt="Signature">
             <ImageDisplay bucketId={iconsId} fileId={signId} />
           </div>
           {toggle && (
@@ -164,7 +164,7 @@ const App = () => {
         )}
         {!viewImg && <div className="flex h-14"></div>}
         <div className="flex flex-col h-full min-h-screen lg:flex-row gap-2 px-6">
-          <div className="z-8 flex flex-col justify-center h-[30rem] w-full mt-4 border border-[#c86450] rounded-3xl  text-white text-xl font-semibold text-wrap p-6 ">
+          <div className="z-8 flex flex-col justify-center h-[30rem] w-full mt-4  border border-[#c86450] rounded-3xl  text-white text-xl font-semibold text-wrap p-6 ">
             <h1 className="z-10 flex text-wrap text-3xl text-[#e4afa4] md:text-5xl p-3 justify-center  ">
               Hiii Good {greet}, This is Raman
             </h1>
@@ -183,9 +183,14 @@ const App = () => {
             onMouseLeave={() => {
               setViewImg(true);
             }}
-            className=" mainImg z-10  flex justify-center h-[30rem] w-3/4 md:w-1/2 lg:w-1/3 bg-[#74512d16] rounded-3xl mx-auto mt-4  text-white text-xl font-semibold text-wrap"
+            className=" mainImg z-10  flex justify-center h-[25rem] sm:h-[30rem] w-full sm:w-3/5 lg:w-1/3 bg-[#74512d16] rounded-3xl mx-auto mt-4  text-white text-xl font-semibold text-wrap"
           >
             {/* Mouse Coordinates: X={mouseCoords.x}, Y={mouseCoords.y} */}
+            {viewImg && (
+              <p className="z-10 developer text-wrap text-2xl md:text-4xl p-3 flex justify-center items-center bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400">
+                Click / Hover{" "}
+              </p>
+            )}
             {!viewImg && (
               // <img
               //   src={me}
@@ -261,7 +266,7 @@ const App = () => {
                 javaScript
               </li>
               <li className="flex flex-col justify-center items-center text-2xl">
-                <img className=" h-20 m-4" src={tailwind} alt="" />
+                <img className=" h-20 max-w-5 mx-2" src={tailwind} alt="" />
                 Tailwind-CSS
               </li>
               <li className="flex flex-col justify-center items-center text-2xl">
@@ -293,7 +298,7 @@ const App = () => {
           </div>
 
           {education && (
-            <div className="flex flex-col gap-4 w-full p-6 ">
+            <div className="flex flex-col gap-4 w-full p-2 ">
               <div className="flex flex-col gap-2 p-3 mx-4 mt-5 rounded-lg bg-[#3b261d] ">
                 <h1 className=" flex  items-center justify-between text-wrap text-[#d7cbc8] font-semibold md:text-lg text-base  ">
                   BE/B.TECH
@@ -324,7 +329,7 @@ const App = () => {
             </div>
           )}
           {!education && (
-            <div className="flex flex-col gap-4 w-full p-6">
+            <div className="flex flex-col gap-4 w-full p-2">
               <div className="flex flex-col gap-2 p-3 mx-4 mt-5 rounded-lg bg-[#3b261d] ">
                 <h1 className=" flex  items-center justify-between text-wrap text-[#d7cbc8] font-semibold md:text-lg text-base  ">
                   React JS

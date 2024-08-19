@@ -58,6 +58,7 @@ const Contact = () => {
     );
 
     // console.log(formData);
+    alert("Message Sent...");
     setFormData({
       name: "",
       email: "",
@@ -71,10 +72,10 @@ const Contact = () => {
       className=" contact  min-h-screen w-full flex flex-col items-center text-white bg-brown-500"
     >
       <div className="flex flex-row p-2 m-4">
-        <h1 className=" developer flex text-wrap text-6xl  font-bold bg-gradient-to-r from-[#e4afa4] to-[#5c443f] p-4 mr-0 m-7 ">
+        <h1 className=" developer flex text-wrap text-6xl items-center font-bold bg-gradient-to-r from-[#e4afa4] to-[#5c443f]  mr-0 m-2 ">
           Reach Out
         </h1>
-        <h3 className="text-6xl p-4 ml-0 m-7 ">✌️✌️</h3>
+        <h3 className="text-6xl p-4 ml-0 m-2 ">✌️✌️</h3>
       </div>
       <div className="  flex flex-center h-[30rem] m-2 w-full md:w-3/4 rounded-xl shadow-3xl border-0 border-[#c86450]">
         <form

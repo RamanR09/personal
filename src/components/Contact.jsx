@@ -58,7 +58,6 @@ const Contact = () => {
     );
 
     // console.log(formData);
-    alert("Message Sent...");
     setFormData({
       name: "",
       email: "",

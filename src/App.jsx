@@ -133,6 +133,9 @@ const App = () => {
             <li className=" hover:text-[#e4afa4] hover:scale-110 ease-in-out ">
               <a href="#projects">Projects</a>
             </li>
+            <li className=" hover:text-[#e4afa4] hover:scale-110 ease-in-out ">
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         )}
         <ul className="  flex flex-col sm:flex-row max-sm:hidden  justify-end items-end my-auto px-2 mr-4 gap-4">
@@ -147,6 +150,9 @@ const App = () => {
           </li>
           <li className=" hover:text-[#e4afa4] hover:scale-110 ease-in-out ">
             <a href="#projects">Projects</a>
+          </li>
+          <li className=" hover:text-[#e4afa4] hover:scale-110 ease-in-out ">
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -266,7 +272,7 @@ const App = () => {
                 javaScript
               </li>
               <li className="flex flex-col justify-center items-center text-2xl">
-                <img className=" h-20 max-w-5 mx-2" src={tailwind} alt="" />
+                <img className=" h-20 max-w-20 mx-2" src={tailwind} alt="" />
                 Tailwind-CSS
               </li>
               <li className="flex flex-col justify-center items-center text-2xl">
